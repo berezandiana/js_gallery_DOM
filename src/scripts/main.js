@@ -9,11 +9,9 @@ thumbs.addEventListener('click', (e) => {
     return;
   }
 
-  const newSrc = link.getAttribute('href');
-
   e.preventDefault();
 
   const largeImg = document.getElementById('largeImg');
 
-  largeImg.src = newSrc;
+  largeImg.setAttribute('src', link.href);
 });
